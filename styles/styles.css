@@ -47,7 +47,12 @@ body {
 
 
   /* ===================
-    1. Layout
+    2. Layout
+  ===================*/
+
+
+   /* ===================
+    2.1 Navigation - Kevin Powell YT channel
   ===================*/
 
 header {
@@ -59,7 +64,7 @@ header {
     color: var(--primary);
 }
 
-.logo-box a{
+.logo_box a{
     text-decoration: none;
     color: var(--primary);
     font-family: 'Petit Formal Script', cursive;
@@ -210,4 +215,41 @@ nav a:hover {
     }
 
     
+}
+
+footer {
+    width: 100vw;
+    display: block;
+    overflow: hidden;
+    padding: 70px 0;
+}
+
+.inner_footer {
+    display: block;
+    margin: 0 auto;
+    width: 1100px;
+    height: 100%;
+    color: white;
+}
+
+.inner_footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.inner_footer a:hover {
+    color: var(--secondary);
+}
+
+.inner_footer .logo_container {
+    width: 30%;
+    float: left;
+    height: 100%;
+    display: block;
+}
+
+.inner_footer .footer_third {
+    width: calc(21.66666666667% - 10px);
+    margin-right: 10px;
+    height: 100%;
 }
