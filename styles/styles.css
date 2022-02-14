@@ -97,6 +97,11 @@ header a {
   border-radius: 10px;
 }
 
+.tabs-container {
+  display: none;
+  padding: 0 10px;
+}
+
 main {
   /* temporary */
   height: 70vh;
@@ -127,4 +132,34 @@ footer {
     flex-direction: row;
     align-items: center;
   }
+
+  .tabs-container {
+    display: block;
+  }
+}
+
+/* tabs */
+[data-tab-content] {
+  display: none;
+}
+
+.active[data-tab-content] {
+  display: block;
+}
+
+.tabs {
+  list-style: none;
+  display: flex;
+  background-color: #555;
+  color: #fff;
+  padding: 0;
+}
+
+.tab {
+  margin: 0 20px;
+}
+
+.tab:hover {
+  cursor: pointer;
+  color: #000;
 }

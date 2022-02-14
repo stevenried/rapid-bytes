@@ -35,16 +35,24 @@
       <!-- end burger -->
     </header>
 
+    <!-- tabs of categories for the blog content.
+      This will show a sample or abstract of the first few articles of each category
+      where users can then read more or navigate elsewhere -->
+
     <div class="tabs-container">
       <ul class="tabs">
-        <li class="tab active">Category 1</li>
-        <li class="tab">Category 2</li>
-        <li class="tab">Category 3</li>
-        <li class="tab">Category 4</li>
+        <li data-tab-target="#category-1" class="tab active">Category 1</li>
+        <li data-tab-target="#category-2" class="tab">Category 2</li>
+        <li data-tab-target="#category-3" class="tab">Category 3</li>
+        <li data-tab-target="#category-4" class="tab">Category 4</li>
       </ul>
       <!-- end tabs -->
       <div class="tab-content">
-        <div class="category category-1">
+        <div
+          id="category-1"
+          data-tab-content
+          class="category category-1 active"
+        >
           <h1>Category 1</h1>
           <div class="articles">
             <div class="articles__article-1">
@@ -108,7 +116,7 @@
           <a href="#" class="btn read-all">Read All Category 1</a>
         </div>
         <!-- end category 1 -->
-        <div class="category category-2">
+        <div id="category-2" data-tab-content class="category category-2">
           <h1>Category 2</h1>
           <div class="articles">
             <div class="articles__article-1">
@@ -171,7 +179,7 @@
           <a href="#" class="btn read-all">Read All Category 2</a>
         </div>
         <!-- end category-2 -->
-        <div class="category category-3">
+        <div id="category-3" data-tab-content class="category category-3">
           <h1>Category 3</h1>
           <div class="articles">
             <div class="articles__article-1">
@@ -234,7 +242,7 @@
           <a href="#" class="btn read-all">Read All Category 3</a>
         </div>
         <!-- end category-3 -->
-        <div class="category category-4">
+        <div id="category-4" data-tab-content class="category category-4">
           <h1>Category 4</h1>
           <div class="articles">
             <div class="articles__article-1">
