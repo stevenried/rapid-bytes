@@ -4,23 +4,28 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/styles.css" />
-    <script src="./js/script.js" defer></script>
-    <script src="./js/utlity.js" defer></script>
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <script src="../js/script.js" defer></script>
+    <script src="../js/utlity.js" defer></script>
     <title>Reviews</title>
   </head>
   <body>
     <header class="header">
-      <div class="main-title"><h1 class="main-title--heading"><a class="main-title--link" href="index.html">Rapid-Bytes</a></h1></div>
-      <nav class="nav">
-        <ul class="nav-menu">
-          <li><a href="nursing.html">Nursing Stories</a></li>
-          <li><a href="parenting.html">Parenting Stories</a></li>
-          <li><a href="opinion.html">Opinion Pieces</a></li>
-          <li><a href="short-stories.html">Short Stories</a></li>
-          <li><a href="reviews.html">Reviews</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
+      <div class="main-title flex">
+        <h1 class="main-title__heading"><a href="../index.html" class="main-title__link">Rapid-Bytes</a></h1>
+        <div class="burger" data-id="burger">
+          <div class="burger__line"></div>
+        </div>
+      </div>
+      <nav class="nav" data-id="nav">
+        <ul class="nav-menu toggle-display flex" data-id="nav-menu">
+          <li><a href="../content/nursing.html">Nursing Stories</a></li>
+          <li><a href="../content/parenting.html">Parenting Stories</a></li>
+          <li><a href="../content/opinion.html">Opinion Pieces</a></li>
+          <li><a href="../content/short-stories.html">Short Stories</a></li>
+          <li><a href="../content/reviews.html">Reviews</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -52,15 +57,15 @@
       <div class="container">
         <div class="social-icons">
           
-          <a href="" class="social-link"><img src="./assets/facebook.svg" alt="Facebook icon"></a>
-          <a href="" class="social-link"><img src="./assets/twitter.svg" alt="Twitter icon"></a>
-          <a href="" class="social-link"><img src="./assets/instagram.svg" alt="Instagram icon"></a>
+          <a href="" class="social-link"><img src="../assets/facebook.svg" alt="Facebook icon"></a>
+          <a href="" class="social-link"><img src="../assets/twitter.svg" alt="Twitter icon"></a>
+          <a href="" class="social-link"><img src="../assets/instagram.svg" alt="Instagram icon"></a>
           
           
         </div>
         <div class="copyright-box">
           <small class="copyright" data-id="copyright">
-            Copyright &#169 2022, Rapid-Bytes. All Rights Reserved
+            Copyright &#169 <span data-id="current-year"></span>, Rapid-Bytes. All Rights Reserved.
           </small>
         </div>
       </div>
