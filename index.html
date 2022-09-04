@@ -11,16 +11,21 @@
   </head>
   <body>
     <header class="header">
-      <div class="main-title"><h1><a href="index.html">Rapid-Bytes</a></h1></div>
-      <nav class="nav">
-        <ul class="nav-menu flex">
-          <li><a href="nursing.html">Nursing Stories</a></li>
-          <li><a href="parenting.html">Parenting Stories</a></li>
-          <li><a href="opinion.html">Opinion Pieces</a></li>
-          <li><a href="short-stories.html">Short Stories</a></li>
-          <li><a href="reviews.html">Reviews</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
+        <div class="main-title flex">
+          <h1 class="main-title__heading"><a href="./index.html" class="main-title__link">Rapid-Bytes</a></h1>
+          <div class="burger" data-id="burger">
+            <div class="burger__line"></div>
+          </div>
+        </div>
+      <nav class="nav toggle-display" data-id="nav">
+        <ul class="nav-menu flex" data-id="nav-menu">
+          <li><a href="./content/nursing.html">Nursing Stories</a></li>
+          <li><a href="./content/parenting.html">Parenting Stories</a></li>
+          <li><a href="./content/opinion.html">Opinion Pieces</a></li>
+          <li><a href="./content/short-stories.html">Short Stories</a></li>
+          <li><a href="./content/reviews.html">Reviews</a></li>
+          <li><a href="./content/about.html">About</a></li>
+          <li><a href="./content/contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -47,6 +52,8 @@
           <div class="recent">
             <div class="recent--primary">
               <h2 class="recent--primary__title">A Long Time Ago</h2>
+              <span class="category"></span>
+              <span class="date-posted"></span>
               <p class="recent--primary__preview">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quam consequuntur illo maiores. Vel, ipsum? Magni dolor qui ex amet in quod eaque quos dolores.
               </p>
@@ -67,17 +74,14 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <div class="social-icons">
-          
-          <a href="" class="social-link"><img src="./assets/facebook.svg" alt="Facebook icon"></a>
-          <a href="" class="social-link"><img src="./assets/twitter.svg" alt="Twitter icon"></a>
-          <a href="" class="social-link"><img src="./assets/instagram.svg" alt="Instagram icon"></a>
-          
-          
-        </div>
+        <ul class="social-icons">
+          <li><a href="" class="social-link"><img src="./assets/facebook.svg" alt="Facebook icon"></a></li>
+          <li><a href="" class="social-link"><img src="./assets/twitter.svg" alt="Twitter icon"></a></li>
+          <li><a href="" class="social-link"><img src="./assets/instagram.svg" alt="Instagram icon"></a></li>
+        </ul>
         <div class="copyright-box">
           <small class="copyright" data-id="copyright">
-            Copyright &#169 2022, Rapid-Bytes. All Rights Reserved
+            Copyright &#169 <span data-id="current-year"></span>, Rapid-Bytes. All Rights Reserved.
           </small>
         </div>
       </div>
