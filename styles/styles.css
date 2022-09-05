@@ -59,7 +59,6 @@ body {
 
 .nav {
   background: var(--clr-purple);
-  /* display: none; */
 }
 
 /* ================
@@ -74,8 +73,10 @@ body {
 }
 
 .main-title {
-  align-items: center;
   justify-content: space-evenly;
+  position: relative;
+  z-index: 2;
+  align-items: center;
 }
 
 .burger {
@@ -108,12 +109,21 @@ body {
   left: 0;
 }
 
+.nav {
+  width: 100%;
+  position: absolute;
+  top: -358.4px;
+  z-index: 1;
+  transition: top 350ms ease-in;
+  opacity: 0.96;
+}
+
 .nav-menu {
   flex-direction: column;
 }
 
 .toggle-display {
-  display: none;
+  top: 66.433px;
 }
 
 .nav-menu li {
@@ -126,6 +136,6 @@ body {
 }
 
 .nav-menu li:last-child {
-  font-size: inherit; /* temporary */
+  font-size: inherit; /* temporary to avoid prettier error for empty css block*/
   /* margin-bottom: 0.8em; */
 }
