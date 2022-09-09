@@ -1,0 +1,17 @@
+article,
+aside {
+  width: 93%;
+  margin-inline: auto;
+}
+
+p {
+  margin: 1em 0;
+}
+
+.related-post__img-box {
+  /* flex-grow:  */
+}
+
+.related-author {
+  margin: 0;
+}
