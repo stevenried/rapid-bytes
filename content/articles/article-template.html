@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../../styles/styles.css" />
+    <link rel="stylesheet" href="../../styles/articles.css">
     <script src="../../js/script.js" defer></script>
     <script src="../../js/utlity.js" defer></script>
     <title>Article Template</title>
@@ -137,74 +138,86 @@
       </article>
       <aside class="related-posts" data-id="related-posts">
         <h4>Related posts</h4>
-        <ul class="realted-posts__list">
-          <li class="related-post" data-id="related-post">
-            <img
-              src="https://images.unsplash.com/photo-1536104968055-4d61aa56f46a"
-              class="related-image"
-              alt="Person programming"
-              width="75"
-              width="75"
-              data-id="related-image"
-            />
-            <small class="attribution"
-              >Photo by
-              <a href="https://unsplash.com/@trueagency">True Agency</a> at
-              <a href="https://unsplash.com">Unsplash.com</a></small
-            >
-            <a href="#" class="related-title__link" data-id="related-link"
-              >How to Learn Web Development</a
-            >
-            <p class="related-author" data-id="related-author">
-              By Jonas Schmedtmann
-            </p>
+        <ul class="related-posts__list">
+          <li class="related-post flex" data-id="related-post">
+            <div class="related-post__img-box col">
+              <img
+                src="https://images.unsplash.com/photo-1536104968055-4d61aa56f46a"
+                class="related-image"
+                alt="Person programming"
+                width="75"
+                width="75"
+                data-id="related-image"
+              />
+              <small class="attribution"
+                >Photo by
+                <a href="https://unsplash.com/@trueagency">True Agency</a> at
+                <a href="https://unsplash.com">Unsplash.com</a></small
+              >
+            </div>
+            <div class="col">
+              <a href="#" class="related-title__link" data-id="related-link"
+                >How to Learn Web Development</a
+              >
+              <p class="related-author" data-id="related-author">
+                By Jonas Schmedtmann
+              </p>
+            </div>
           </li>
-          <li class="related-post" data-id="related-post">
-            <img
-              src="https://images.unsplash.com/photo-1559087867-ce4c91325525"
-              class="related-image"
-              alt="Lightning"
-              width="75"
-              heigth="75"
-              data-id="related-image"
-            />
-            <small class="attribution"
-              >Photo by
-              <a href="https://unsplash.com/@kreyatif">Michal Mancewicz</a> at
-              <a href="https://unsplash.com">Unsplash.com</a></small
-            >
-            <a href="#" class="related-title__link" data-id="related-link"
-              >The Unknown Powers of CSS</a
-            >
-            <p class="related-author" data-id="related-author">By Jim Dillon</p>
+          <li class="related-post flex" data-id="related-post">
+            <div class="related-post__img-box col">
+              <img
+                src="https://images.unsplash.com/photo-1559087867-ce4c91325525"
+                class="related-image"
+                alt="Lightning"
+                width="75"
+                height="75"
+                data-id="related-image"
+              />
+              <small class="attribution"
+                >Photo by
+                <a href="https://unsplash.com/@kreyatif">Michal Mancewicz</a> at
+                <a href="https://unsplash.com">Unsplash.com</a></small
+              >
+            </div>
+            <div class="col">
+              <a href="#" class="related-title__link" data-id="related-link"
+                >The Unknown Powers of CSS</a
+              >
+              <p class="related-author" data-id="related-author">By Jim Dillon</p>
+            </div>
           </li>
-          <li class="related-post" data-id="related-post">
-            <img
-              src="https://images.unsplash.com/photo-1627398242454-45a1465c2479"
-              class="related-image"
-              alt="JavaScript code on a screen"
-              width="75"
-              height="75"
-              data-id="related-image"
-            />
-            <small class="attribution"
-              >Photo by
-              <a href="https://unsplash.com/@6heinz3r">Gabriel Heinzer</a> at
-              <a href="https://unsplash.com">Unsplash.com</a></small
-            >
-            <a href="#" class="related-title__link" data-id="related-link"
-              >Why JavaScript is Awesome</a
-            >
-            <p class="related-author" data-id="related-author">
-              By Matilda Franklin
-            </p>
+          <li class="related-post flex" data-id="related-post">
+            <div class="related-post__img-box col">
+              <img
+                src="https://images.unsplash.com/photo-1627398242454-45a1465c2479"
+                class="related-image"
+                alt="JavaScript code on a screen"
+                width="75"
+                height="75"
+                data-id="related-image"
+              />
+              <small class="attribution"
+                >Photo by
+                <a href="https://unsplash.com/@6heinz3r">Gabriel Heinzer</a> at
+                <a href="https://unsplash.com">Unsplash.com</a></small
+              >
+            </div>
+            <div class="col">
+              <a href="#" class="related-title__link" data-id="related-link"
+                >Why JavaScript is Awesome</a
+              >
+              <p class="related-author" data-id="related-author">
+                By Matilda Franklin
+              </p>
+            </div>
           </li>
         </ul>
       </aside>
     </main>
     <footer class="footer">
       <div class="container">
-        <ul class="social-icons">
+        <ul class="social-icons flex">
           <li><a href="" class="social-link"><img src="../../assets/facebook.svg" alt="Facebook icon"></a></li>
           <li><a href="" class="social-link"><img src="../../assets/twitter.svg" alt="Twitter icon"></a></li>
           <li><a href="" class="social-link"><img src="../../assets/instagram.svg" alt="Instagram icon"></a></li>

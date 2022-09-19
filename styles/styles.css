@@ -27,6 +27,10 @@ ul {
   padding: 0;
 }
 
+p {
+  margin: 0;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -57,9 +61,25 @@ body {
   text-decoration: none;
 }
 
+.btn-link:link {
+  display: inline-block;
+  margin-top: 0.4em;
+  padding: 0.7em 1.45em;
+  border-radius: 0.4em;
+  text-decoration: none;
+}
+
+.btn-link:hover {
+  opacity: 0.9;
+}
+
 .nav {
   background: var(--clr-purple);
 }
+
+/* .attribution {
+  font-size: 0.6em;
+} */
 
 /* ================
 4.  Layout
@@ -109,6 +129,10 @@ body {
   left: 0;
 }
 
+.main-title {
+  height: 66.3px;
+}
+
 .nav {
   width: 100%;
   position: absolute;
@@ -138,4 +162,63 @@ body {
 .nav-menu li:last-child {
   font-size: inherit; /* temporary to avoid prettier error for empty css block*/
   /* margin-bottom: 0.8em; */
+}
+
+.aside__links {
+  margin-top: 1em;
+}
+
+.intro-section,
+.main-section {
+  max-width: 93%;
+  margin-inline: auto;
+}
+
+.recent-posts {
+  margin: 1em 0;
+}
+
+.article-preview-img {
+  width: 75px;
+  display: inline;
+}
+
+.recent--primary__title {
+  display: inline-block;
+  margin: 0 0 0 0.5em;
+}
+
+.more {
+  background: var(--clr-purple);
+  color: var(--clr-yellow);
+}
+
+.source-topic {
+  display: block;
+  margin: 0.3em 0 0.3em;
+  font-size: 0.7rem;
+}
+
+.recent--secondary {
+  margin-top: 0.5em;
+}
+
+.footer {
+  padding: 0.5em 0 0.8em 0;
+  background: var(--clr-purple);
+  color: var(--clr-yellow);
+  text-align: center;
+}
+
+.social-icons {
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons li {
+  margin: 0.65em 1.4em;
+}
+
+svg {
+  fill: var(--clr-yellow);
 }
